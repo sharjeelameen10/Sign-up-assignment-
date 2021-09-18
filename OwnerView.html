@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner View</title>
+    <link rel="stylesheet" href="./OwnerView.css">
+</head>
+<body onload="onLoadFunc()">
+    <div class="mainCont">
+        <div class="Btns">
+            <input type="button" value="Reports" onclick="showCss()" >
+            <input type="button" value="Settings" onclick="cssChange()" >
+        </div>
+        <br><br>
+        <div class="subCont1" id="subCont1" >
+            <div class="dropDownCont">
+                <select id="">
+                        <option value="All Members">All Members</option>
+                        <option value="Developers">Developers</option>
+                        <option value="Maintaince">Maintaince</option>
+                </select>
+                <input type="date" name="" id="op">
+            </div>
+            <div class="questions">
+                <div class="questionOne">
+                    <p> Haris Shaka: 16th Aug </p>
+                    <p>Q. What did you do today?</p>
+                    <p>A. Nothing</p>
+                    <p>Q. What will you do tommorow?</p>
+                    <p>A. Nothing</p>
+                    <p>Q. Are there any blocker anyway?</p>
+                    <p>A. Nothing</p>
+                </div>
+                <br>
+                <div class="questionTwo">
+                    <p> Arshad From Chakwal: 16th Aug | Not Submitted Yet </p>
+                    <p> Haris Shaka: 16th Aug </p>
+                    <p>Q. What did you do today?</p>
+                    <p>A. </p>
+                    <p>Q. What will you do tommorow?</p>
+                    <p>A. </p>
+                    <p>Q. Are there any blocker anyway?</p>
+                    <p>A. </p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="subCont2" id="subCont2">
+            <div class="questionsCont" id="questionsCont">
+                <h3>Questions:</h3>
+                <input type="text" size="50" placeholder="What did you do today?" /><br><br>
+                <input type="text" size="50" placeholder="What will you do tommorow?" /><br><br>
+                <input type="text" size="50"  placeholder="Are there any blockers in your way?" />
+            </div>
+            <div class="reminderCont" id="reminderCont">
+                <h3>Reminder Time:</h3>
+                <input type="time">
+                <input type="checkbox" checked/>Exclude Weekends
+            </div>
+            <div class="membersCont" id="membersCont">
+                <h3>Members:</h3>
+                <input type="email" size="50"  placeholder="Add Members" />
+                <input type="button" value="Add"><br><br>
+            </div>
+            <div class="btnsCont" id="btnsCont">
+                <input type="button" value="Save Changes"> 
+                <input type="button" value="Cancel">
+                <input type="button" value="Delete Team">
+
+            </div>
+        </div>
+    </div>
+
+        <script src="./OwnerView.js"></script>
+    </body>
+</html>

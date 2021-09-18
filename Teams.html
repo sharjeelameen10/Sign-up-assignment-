@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams</title>
+    <link rel="stylesheet" href="./Team.css">
+</head>
+<body>
+    <div class="createNTCont" id="createNTCont">
+        <div class="createNewTeam">
+            <h2>Create New Team</h2>
+            <input type="text" size="45" placeholder="Team Name" name="" id="teamName">
+            <br>
+            <select style="width: 325px;" name="createNewTeam"  id="">
+                <!-- <optgroup label="Category"> -->
+                    <option value="1">Category</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                <!-- </optgroup> -->
+            </select>
+            <br>
+            <input type="email" size="45" placeholder="Members (type e-mail)" id="">
+            <br>
+            <div class="Btns">
+                <input type="button" value="Create" onclick="cssChange()" >
+                <input type="button" value="Cancle" onclick="cssChange()" >
+            </div>
+        </div>
+    </div>
+    <div class="mainCont">
+        <h2>Teams You On</h2>
+        <div class="subCont1">
+            <div class="teamOwn1">
+                <h3>Developers</h3>
+                <p><b>Members:</b>Sami, Sharjeel, Hamza & 69 others</p>
+            </div>
+            <br>
+            <div class="teamOwn2">
+                <h3>Maintaince</h3>
+                <p><b>Members:</b>Haris, Faizan, Shayan & 69 others</p>
+            </div>
+        </div>
+        <h2>Team You're Part</h2>
+        <div class="subCont2">
+            <div class="teamPart1">
+                <h3>Scientits</h3>
+                <p><b>Members:</b>You, Sharjeel, Hamza & 3 others</p>
+            </div>
+            <br>
+            <div class="teamPart2">
+                <h3>Drivers</h3>
+                <p><b>Members:</b>You, Sharjeel, Hamza & 3 others</p>
+            </div>
+        </div>
+        <br>
+        <button onclick="showCss()">Add</button>
+    </div>
+
+    <script src="./Team.js"></script>
+</body>
+</html>
